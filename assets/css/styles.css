@@ -590,7 +590,7 @@ body {
   font-size: 12px;
   line-height: 20px;
   font-weight: bold;
-  padding: 10px 4px;
+  padding: 12px 4px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -600,13 +600,13 @@ body {
 }
 @media (min-width: 950px) {
   .nav__link {
-    padding: 10px 8px;
+    padding: 12px 8px;
     font-size: 14px;
   }
 }
 @media (min-width: 1280px) {
   .nav__link {
-    padding: 10px 15px;
+    padding: 12px 15px;
     font-size: 14px;
   }
 }
@@ -616,7 +616,7 @@ body {
 }
 @media (min-width: 1024px) {
   .ie .nav__link {
-    padding: 10px 8px;
+    padding: 12px 8px;
     font-size: 14px;
   }
 }
