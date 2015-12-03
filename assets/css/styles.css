@@ -519,6 +519,10 @@ video {
   top: 20px;
   background-size: cover;
 }
+.ie .header__logo {
+  width: 198px;
+  height: 42px;
+}
 .header__home {
   display: block;
   height: 100%;
@@ -583,6 +587,16 @@ video {
 @media (min-width: 950px) {
   .nav__link {
     padding: 10px 17px;
+    font-size: 14px;
+  }
+}
+.ie .nav__link {
+  padding: 10px 6px;
+  font-size: 12px;
+}
+@media (min-width: 950px) {
+  .ie .nav__link {
+    padding: 10px 8px;
     font-size: 14px;
   }
 }
@@ -931,10 +945,11 @@ video {
 .suggestion {
   position: relative;
   display: block;
+  max-width: 315px;
 }
 .suggestion__text {
   position: absolute;
-  right: 89px;
+  right: 0;
   bottom: 22px;
 }
 .suggestion__title {

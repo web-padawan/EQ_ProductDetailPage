@@ -1,10 +1,11 @@
 .suggestion {
   position: relative;
   display: block;
+  max-width: 315px;
 
   &__text {
     position: absolute;
-    right: 89px;
+    right: 0;
     bottom: 22px;
   }
   &__title {

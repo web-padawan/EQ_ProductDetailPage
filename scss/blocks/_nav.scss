@@ -28,6 +28,14 @@
       padding: 10px 17px;
       font-size: 14px;
     }
+    .ie & {
+      padding: 10px 6px;
+      font-size: 12px;
+      @include breakpoint(950px) {
+        padding: 10px 8px;
+        font-size: 14px;
+      }
+    }
     &--active {
       background: #fff;
       box-shadow: inset 0 3px 5px $navlink-shadow;

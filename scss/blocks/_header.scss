@@ -13,6 +13,10 @@
     position: relative;
     top: 20px;
     background-size: cover;
+    .ie & {
+      width: 198px;
+      height: 42px;
+    }
   }
   &__home {
     display: block;
