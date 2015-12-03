@@ -10,7 +10,7 @@
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    @include breakpoint(950px) {
+    @include breakpoint(961px) {
       margin-bottom: 10px;
       max-width: 80px;
       margin: 0 auto;
@@ -20,7 +20,7 @@
     margin: 0 auto;
     max-width: 85%;
     overflow: hidden;
-    @include breakpoint(950px) {
+    @include breakpoint(961px) {
       max-width: 100%;
     }
   }

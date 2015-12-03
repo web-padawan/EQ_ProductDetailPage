@@ -337,7 +337,7 @@ video {
   text-decoration: none;
   vertical-align: top;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .carousel__prev {
     display: block;
     margin: 2px auto;
@@ -358,7 +358,7 @@ video {
   text-decoration: none;
   vertical-align: top;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .carousel__next {
     display: block;
     margin: 2px auto;
@@ -375,7 +375,7 @@ video {
   overflow: hidden;
   padding: 0 10px;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .carousel__items {
     float: none;
     padding: 10px 0 0 0;
@@ -386,7 +386,7 @@ video {
   text-decoration: none;
   margin: 0 10px;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .carousel__item {
     display: block;
     margin: 8px 0 16px 0;
@@ -540,7 +540,7 @@ video {
 .main {
   padding-bottom: 15px;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .main__content {
     width: 87.34177%;
     float: left;
@@ -550,7 +550,7 @@ video {
 .main__sidebar {
   clear: both;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .main__sidebar {
     width: 11.39241%;
     float: right;
@@ -565,7 +565,7 @@ video {
 .nav__item {
   float: left;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .nav__item:first-child .nav__link {
     padding-left: 0;
   }
@@ -584,7 +584,7 @@ video {
 .nav__link:hover {
   color: #72a527;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .nav__link {
     padding: 10px 17px;
     font-size: 14px;
@@ -594,7 +594,7 @@ video {
   padding: 10px 6px;
   font-size: 12px;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .ie .nav__link {
     padding: 10px 8px;
     font-size: 14px;
@@ -714,7 +714,7 @@ video {
   text-align: center;
   text-transform: uppercase;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .recommend__title {
     margin-bottom: 10px;
     max-width: 80px;
@@ -726,7 +726,7 @@ video {
   max-width: 85%;
   overflow: hidden;
 }
-@media (min-width: 950px) {
+@media (min-width: 961px) {
   .recommend__content {
     max-width: 100%;
   }

@@ -5,7 +5,7 @@
     float: left;
     &:first-child {
       .nav__link {
-        @include breakpoint(950px) {
+        @include breakpoint(961px) {
           padding-left: 0;
         }
       }
@@ -24,14 +24,14 @@
     &:hover {
       color: $navlink-hover;
     }
-    @include breakpoint(950px) {
+    @include breakpoint(961px) {
       padding: 10px 17px;
       font-size: 14px;
     }
     .ie & {
       padding: 10px 6px;
       font-size: 12px;
-      @include breakpoint(950px) {
+      @include breakpoint(961px) {
         padding: 10px 8px;
         font-size: 14px;
       }
