@@ -419,7 +419,7 @@ body {
   font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: #202c3a;
+  color: #102b5a;
   text-transform: uppercase;
 }
 .color__items {
@@ -722,7 +722,7 @@ body {
   font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: #202c3a;
+  color: #102b5a;
   text-transform: uppercase;
 }
 .product__tabs {
@@ -772,7 +772,7 @@ body {
 .reviews__title {
   float: left;
   margin-bottom: 8px;
-  color: #202c3a;
+  color: #102b5a;
   font-weight: bold;
 }
 .reviews__write {
@@ -882,7 +882,7 @@ body {
   font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: #202c3a;
+  color: #102b5a;
   text-transform: uppercase;
 }
 .size__items {
