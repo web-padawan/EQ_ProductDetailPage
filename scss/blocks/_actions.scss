@@ -1,27 +1,35 @@
 .actions {
   padding: 0 5px 16px 0;
   background: image-url('line.jpg') no-repeat center bottom;
+  overflow: hidden;
+
   &__item {
-    width: 36%;
-    display: inline-block;
-    margin-right: 6px;
+    float: left;
+    width: 38%;
+    margin-right: 5px;
     margin-bottom: 6px;
+    &--send,
+    &--share {
+      width: 41%;
+    }
     &--print {
-      width: 16%;
+      float: right;
       margin-right: 0;
-      margin-left: 10px;
+      width: auto;
+    }
+    &--like {
+      clear: left;
     }
   }
   &__link {
-    font-family: $gravur;
+    font-family: $myriad-pro;
     color: $link-default;
     font-size: 12px;
     font-weight: bold;
+    text-decoration: none;
     &:hover {
       color: darken($link-default, 15%);
-    }
-    .ie & {
-      font-weight: normal;
+      text-decoration: underline;
     }
   }
   &__icon {

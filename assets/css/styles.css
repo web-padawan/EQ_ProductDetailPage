@@ -68,18 +68,18 @@ video {
 
 @font-face {
   font-family: "Myriad Pro";
-  src: url('../fonts/myriadpro.eot?1448974118');
-  src: url('../fonts/myriadpro.eot?&1448974118#iefix') format('embedded-opentype'), url('../fonts/myriadpro.woff?1448974118') format('woff'), url('../fonts/myriadpro.ttf?1448974118') format('truetype');
+  src: url('../fonts/myriadpro.eot?1449170500');
+  src: url('../fonts/myriadpro.eot?&1449170500#iefix') format('embedded-opentype'), url('../fonts/myriadpro.woff?1449170500') format('woff'), url('../fonts/myriadpro.ttf?1449170500') format('truetype');
 }
 @font-face {
   font-family: "Myriad Pro Light";
-  src: url('../fonts/myriadpro-light.eot?1449127507');
-  src: url('../fonts/myriadpro-light.eot?&1449127507#iefix') format('embedded-opentype'), url('../fonts/myriadpro-light.woff?1449127507') format('woff'), url('../fonts/myriadpro-light.ttf?1449127507') format('truetype');
+  src: url('../fonts/myriadpro-light.eot?1449170500');
+  src: url('../fonts/myriadpro-light.eot?&1449170500#iefix') format('embedded-opentype'), url('../fonts/myriadpro-light.woff?1449170500') format('woff'), url('../fonts/myriadpro-light.ttf?1449170500') format('truetype');
 }
 @font-face {
   font-family: "Gravur";
-  src: url('../fonts/gravur.eot?1448975502');
-  src: url('../fonts/gravur.eot?&1448975502#iefix') format('embedded-opentype'), url('../fonts/gravur.woff?1448975486') format('woff'), url('../fonts/gravur.ttf?1448975468') format('truetype');
+  src: url('../fonts/gravur.eot?1449170500');
+  src: url('../fonts/gravur.eot?&1449170500#iefix') format('embedded-opentype'), url('../fonts/gravur.woff?1449170500') format('woff'), url('../fonts/gravur.ttf?1449170500') format('truetype');
 }
 .footer__container, .header__container, .main__container, .topline__container {
   max-width: 1280px;
@@ -99,30 +99,36 @@ body {
 
 .actions {
   padding: 0 5px 16px 0;
-  background: url('../images/line.jpg?1449137525') no-repeat center bottom;
+  background: url('../images/line.jpg?1449170500') no-repeat center bottom;
+  overflow: hidden;
 }
 .actions__item {
-  width: 36%;
-  display: inline-block;
-  margin-right: 6px;
+  float: left;
+  width: 38%;
+  margin-right: 5px;
   margin-bottom: 6px;
 }
+.actions__item--send, .actions__item--share {
+  width: 41%;
+}
 .actions__item--print {
-  width: 16%;
+  float: right;
   margin-right: 0;
-  margin-left: 10px;
+  width: auto;
+}
+.actions__item--like {
+  clear: left;
 }
 .actions__link {
-  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   color: #4e6e85;
   font-size: 12px;
   font-weight: bold;
+  text-decoration: none;
 }
 .actions__link:hover {
   color: #324655;
-}
-.ie .actions__link {
-  font-weight: normal;
+  text-decoration: underline;
 }
 .actions__icon {
   display: inline-block;
@@ -522,14 +528,14 @@ body {
 }
 
 .header {
-  background: url('../images/header.jpg?1449055224') no-repeat center top;
+  background: url('../images/header.jpg?1449170500') no-repeat center top;
 }
 .header__logo {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-image: url('../images/logo.png?1448975802');
+  background-image: url('../images/logo.png?1449170500');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 183px;
@@ -589,8 +595,7 @@ body {
   color: #101e47;
   font-size: 12px;
   line-height: 20px;
-  font-weight: bold;
-  padding: 12px 4px;
+  padding: 12px 5px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -607,12 +612,10 @@ body {
 @media (min-width: 1280px) {
   .nav__link {
     padding: 12px 15px;
-    font-size: 14px;
   }
 }
 .ie .nav__link {
   font-size: 11px;
-  font-weight: normal;
 }
 @media (min-width: 1024px) {
   .ie .nav__link {
@@ -682,7 +685,7 @@ body {
 .product__details {
   padding-bottom: 28px;
   clear: both;
-  background: url('../images/line.jpg?1449137525') no-repeat center bottom;
+  background: url('../images/line.jpg?1449170500') no-repeat center bottom;
   font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   line-height: 1.2;
 }
