@@ -1,0 +1,37 @@
+.nav {
+  margin-top: 44px;
+
+  &__item {
+    float: left;
+    &:first-child {
+      .nav__link {
+        @include breakpoint(950px) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  &__link {
+    font-family: $gravur;
+    color: $navlink-default;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 10px 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+      color: $navlink-hover;
+    }
+    @include breakpoint(950px) {
+      padding: 10px 17px;
+      font-size: 14px;
+    }
+    &--active {
+      background: #fff;
+      box-shadow: inset 0px 3px 5px $navlink-shadow;
+      color: $navlink-active;
+    }
+  }
+}

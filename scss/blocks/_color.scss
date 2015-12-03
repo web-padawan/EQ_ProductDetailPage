@@ -1,0 +1,48 @@
+.color {
+
+  &__title {
+    margin-bottom: 7px;
+    font-family: $gravur;
+    font-size: 14px;
+    font-weight: bold;
+    color: $color-title;
+    text-transform: uppercase;
+  }
+  &__items {
+    max-width: 120px;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 3px 1px;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+    &--black {
+      background: #000;
+    }
+    &--white {
+      background: #fff;
+      border: 1px solid #999;
+    }
+    &--gray {
+      background: #999;
+    }
+    &--violet {
+      background: #69699b;
+    }
+    &--blue {
+      background: #25b4f0;
+    }
+    &--navyblue {
+      background: #161893;
+    }
+    &--selected {
+      border: solid 1px #000;
+      box-shadow: inset 0 0 0 2px #fff;
+    }
+    &:hover {
+      outline: solid 1px #ae5c73;
+    }
+  }
+}

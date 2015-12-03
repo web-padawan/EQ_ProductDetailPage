@@ -1,0 +1,27 @@
+.recommend {
+  padding: 0 10px;
+  clear: both;
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 20px;
+    color: $recommend-title;
+    font-family: $gravur;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    @include breakpoint(950px) {
+      margin-bottom: 10px;
+      max-width: 80px;
+      margin: 0 auto;
+    }
+  }
+  &__content {
+    margin: 0 auto;
+    max-width: 85%;
+    overflow: hidden;
+    @include breakpoint(950px) {
+      max-width: 100%;
+    }
+  }
+}

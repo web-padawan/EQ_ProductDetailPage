@@ -1,0 +1,1084 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url('../fonts/myriadpro.eot?1448974118');
+  src: url('../fonts/myriadpro.eot?&1448974118#iefix') format('embedded-opentype'), url('../fonts/myriadpro.woff?1448974118') format('woff'), url('../fonts/myriadpro.ttf?1448974118') format('truetype');
+}
+@font-face {
+  font-family: "Myriad Pro Light";
+  src: url('../fonts/myriadpro-light.eot?1449127507');
+  src: url('../fonts/myriadpro-light.eot?&1449127507#iefix') format('embedded-opentype'), url('../fonts/myriadpro-light.woff?1449127507') format('woff'), url('../fonts/myriadpro-light.ttf?1449127507') format('truetype');
+}
+@font-face {
+  font-family: "Gravur";
+  src: url('../fonts/gravur.eot?1448975502');
+  src: url('../fonts/gravur.eot?&1448975502#iefix') format('embedded-opentype'), url('../fonts/gravur.woff?1448975486') format('woff'), url('../fonts/gravur.ttf?1448975468') format('truetype');
+}
+.footer__container, .header__container, .main__container, .topline__container {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 800px;
+}
+.footer__container:after, .header__container:after, .main__container:after, .topline__container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.actions {
+  padding: 0 5px 16px 0;
+  background: url('../images/line.jpg?1449137525') no-repeat center bottom;
+}
+.actions__item {
+  width: 36%;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+.actions__item--print {
+  width: 15%;
+  margin-right: 0;
+  margin-left: 18px;
+}
+.actions__link {
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  color: #4e6e85;
+  font-size: 12px;
+  font-weight: bold;
+}
+.actions__link:hover {
+  color: #324655;
+}
+.actions__icon {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.actions__icon--wishlist {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -10px -32px no-repeat;
+  width: 11px;
+  height: 10px;
+}
+
+.actions__icon--send {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -31px -32px no-repeat;
+  width: 14px;
+  height: 12px;
+}
+
+.actions__icon--print {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -138px -32px no-repeat;
+  width: 14px;
+  height: 13px;
+}
+
+.actions__icon--like {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -104px -54px no-repeat;
+  width: 13px;
+  height: 13px;
+}
+
+.actions__icon--share {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -21px -32px no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+.addtobag {
+  overflow: hidden;
+  clear: both;
+}
+.addtobag__left {
+  float: left;
+  width: 47.5%;
+}
+.addtobag__right {
+  float: left;
+  width: 52%;
+}
+.addtobag__label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a2948;
+  text-transform: uppercase;
+}
+.addtobag__quantity {
+  float: left;
+  width: 28px;
+  padding: 3px 3px 3px 10px;
+  border: 1px solid #c5c5c5;
+  background: #f2f2f2;
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 12px;
+  box-shadow: inset 0 0 3px #c5c5c5;
+}
+.addtobag__quantity:focus {
+  outline: none;
+  box-shadow: 0 0 3px #858585;
+}
+.addtobag__submit {
+  margin-top: 18px;
+  padding: 4px 8px 4px 12px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  color: white;
+  letter-spacing: .08em;
+  background: #a3ca39;
+  box-shadow: 0px 0px 4px #999;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.addtobag__submit:hover {
+  background: #84a42c;
+}
+.addtobag__submit:focus {
+  outline: none;
+}
+.addtobag__arrow {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -56px -32px no-repeat;
+  width: 8px;
+  height: 12px;
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.bag {
+  background: url('../images/generated/icons-s89c0dd26d4.png') 0 -86px no-repeat;
+  width: 266px;
+  height: 42px;
+  padding-left: 54px;
+}
+.bag__info {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #2f394c;
+}
+.bag__title {
+  margin-top: 4px;
+  color: #626463;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.bag__count {
+  padding-right: 5px;
+}
+.bag__price {
+  padding-left: 3px;
+}
+.bag__btn {
+  float: right;
+  margin: 8px 8px 0 0;
+  padding: 7px 9px 6px 9px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 10px;
+  color: white;
+  letter-spacing: .08em;
+  background: #a3ca39;
+  box-shadow: 0px 0px 4px #999;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.bag__btn:hover {
+  background: #84a42c;
+}
+.bag__arrow {
+  background: url('../images/generated/icons-s89c0dd26d4.png') 0 -32px no-repeat;
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  margin-left: 9px;
+  width: 10px;
+  height: 8px;
+  vertical-align: top;
+}
+
+.bottom__suggestion {
+  margin-top: 20px;
+}
+.bottom__left {
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+  padding-top: 4px;
+}
+.bottom__right {
+  width: 48.71795%;
+  float: right;
+  margin-right: 0;
+  padding: 0 40px 0 2px;
+}
+
+.breadcrumbs {
+  margin: 18px 0 30px 0;
+  overflow: hidden;
+}
+.breadcrumbs__item {
+  float: left;
+  padding: 0 7px;
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 12px;
+}
+.breadcrumbs__item:after {
+  content: ">";
+  position: relative;
+  left: 8px;
+}
+.breadcrumbs__item--home {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -45px -32px no-repeat;
+  width: 11px;
+  height: 12px;
+}
+.breadcrumbs__item--first {
+  padding-left: 14px;
+}
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #4e6e85;
+  font-weight: bold;
+}
+.breadcrumbs__item--active:after {
+  display: none;
+}
+.breadcrumbs__link {
+  color: #999;
+  text-decoration: none;
+}
+.breadcrumbs__link:hover {
+  color: #4e6e85;
+  text-decoration: underline;
+}
+
+.carousel {
+  text-align: center;
+}
+.carousel__prev {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -43px 0 no-repeat;
+  width: 21px;
+  height: 29px;
+  margin-top: 70px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+}
+@media (min-width: 950px) {
+  .carousel__prev {
+    display: block;
+    margin: 2px auto;
+    background: url('../images/generated/icons-s89c0dd26d4.png') -169px -32px no-repeat;
+    width: 29px;
+    height: 20px;
+  }
+}
+.carousel__prev:hover {
+  opacity: 0.5;
+}
+.carousel__next {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -22px 0 no-repeat;
+  width: 21px;
+  height: 29px;
+  margin-top: 70px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+}
+@media (min-width: 950px) {
+  .carousel__next {
+    display: block;
+    margin: 2px auto;
+    background: url('../images/generated/icons-s89c0dd26d4.png') -198px -32px no-repeat;
+    width: 29px;
+    height: 20px;
+  }
+}
+.carousel__next:hover {
+  opacity: 0.5;
+}
+.carousel__items {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 10px;
+}
+@media (min-width: 950px) {
+  .carousel__items {
+    float: none;
+    padding: 10px 0 0 0;
+  }
+}
+.carousel__item {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px;
+}
+@media (min-width: 950px) {
+  .carousel__item {
+    display: block;
+    margin: 8px 0 16px 0;
+  }
+}
+.carousel__itemname {
+  margin-top: 20px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 13px;
+  color: #2d3035;
+  text-align: left;
+}
+.carousel__itemprice {
+  margin-top: 8px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 12px;
+  color: #828282;
+  text-align: left;
+}
+
+.color__title {
+  margin-bottom: 7px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #202c3a;
+  text-transform: uppercase;
+}
+.color__items {
+  max-width: 120px;
+}
+.color__item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 3px 1px;
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+}
+.color__item--black {
+  background: #000;
+}
+.color__item--white {
+  background: #fff;
+  border: 1px solid #999;
+}
+.color__item--gray {
+  background: #999;
+}
+.color__item--violet {
+  background: #69699b;
+}
+.color__item--blue {
+  background: #25b4f0;
+}
+.color__item--navyblue {
+  background: #161893;
+}
+.color__item--selected {
+  border: solid 1px #000;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.color__item:hover {
+  outline: solid 1px #ae5c73;
+}
+
+.footer {
+  overflow: hidden;
+  height: 85px;
+  background: #cacfd5;
+  background: linear-gradient(#dce0e3 0%, #cacfd5 100%);
+  padding: 10px 20px;
+}
+.footer__items {
+  max-width: 640px;
+  float: left;
+}
+.footer__item {
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 16px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+.footer__item--code {
+  margin-left: -10px;
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: normal;
+}
+.footer__link {
+  color: #3c434b;
+  text-decoration: none;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__social {
+  float: right;
+}
+.footer__copyright {
+  padding-top: 18px;
+  clear: both;
+  color: #808487;
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 10px;
+}
+.footer__company {
+  padding-right: 10px;
+  border-right: solid 1px #808487;
+}
+.footer__design {
+  padding-left: 10px;
+}
+
+.header {
+  background: url('../images/header.jpg?1449055224') no-repeat center top;
+  height: 110px;
+}
+.header__logo {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url('../images/logo.png?1448975802');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 183px;
+  height: 38px;
+  position: relative;
+  top: 20px;
+  background-size: cover;
+}
+.header__home {
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+.header__nav {
+  float: left;
+}
+.header__search {
+  float: right;
+  margin-top: 35px;
+  margin-right: 2px;
+}
+
+.main {
+  padding-bottom: 15px;
+}
+@media (min-width: 950px) {
+  .main__content {
+    width: 87.34177%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+}
+.main__sidebar {
+  clear: both;
+}
+@media (min-width: 950px) {
+  .main__sidebar {
+    width: 11.39241%;
+    float: right;
+    margin-right: 0;
+    clear: right;
+  }
+}
+
+.nav {
+  margin-top: 44px;
+}
+.nav__item {
+  float: left;
+}
+@media (min-width: 950px) {
+  .nav__item:first-child .nav__link {
+    padding-left: 0;
+  }
+}
+.nav__link {
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  color: #101e47;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: bold;
+  padding: 10px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav__link:hover {
+  color: #72a527;
+}
+@media (min-width: 950px) {
+  .nav__link {
+    padding: 10px 17px;
+    font-size: 14px;
+  }
+}
+.nav__link--active {
+  background: #fff;
+  box-shadow: inset 0px 3px 5px #d1d1d1;
+  color: #a3ca39;
+}
+
+.product {
+  width: 100%;
+  overflow: hidden;
+}
+.product__left {
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+  padding-top: 4px;
+}
+.product__right {
+  width: 48.71795%;
+  float: right;
+  margin-right: 0;
+  padding: 0 40px 0 2px;
+}
+.product__title {
+  float: left;
+  color: #363f46;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+.product__rating {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -64px -32px no-repeat;
+  width: 74px;
+  height: 13px;
+  float: right;
+  margin-top: 3px;
+}
+.product__reviews {
+  float: right;
+  margin-top: 3px;
+  margin-left: 4px;
+  color: #4e6e85;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+.product__reviews:hover {
+  color: #324655;
+}
+.product__details {
+  padding-bottom: 28px;
+  clear: both;
+  background: url('../images/line.jpg?1449137525') no-repeat center bottom;
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  line-height: 1.2;
+}
+.product__price {
+  margin-right: 6px;
+  color: #ae5c73;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+}
+.product__oldprice {
+  color: #666;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+.product__sku {
+  float: right;
+  display: inline-block;
+  padding-top: 7px;
+  color: #a1a1a1;
+  font-size: 11px;
+}
+.product__color {
+  float: left;
+  width: 47.5%;
+}
+.product__size {
+  float: left;
+  width: 52%;
+}
+.product__addtobag {
+  padding-top: 20px;
+}
+.product__promo {
+  margin-top: 24px;
+  padding: 12px 15px;
+  border: 2px dotted #606166;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #202c3a;
+  text-transform: uppercase;
+}
+.product__tabs {
+  margin-top: 20px;
+}
+
+.recommend {
+  padding: 0 10px;
+  clear: both;
+  overflow: hidden;
+}
+.recommend__title {
+  margin-bottom: 20px;
+  color: #1c2d47;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 950px) {
+  .recommend__title {
+    margin-bottom: 10px;
+    max-width: 80px;
+    margin: 0 auto;
+  }
+}
+.recommend__content {
+  margin: 0 auto;
+  max-width: 85%;
+  overflow: hidden;
+}
+@media (min-width: 950px) {
+  .recommend__content {
+    max-width: 100%;
+  }
+}
+
+.reviews {
+  margin-top: 16px;
+  padding: 5px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+.reviews__title {
+  float: left;
+  margin-bottom: 8px;
+  color: #202c3a;
+  font-weight: bold;
+}
+.reviews__write {
+  float: right;
+  color: #4e6e85;
+  font-weight: bold;
+  font-size: 12px;
+}
+.reviews__write:hover {
+  color: #324655;
+}
+.reviews__content {
+  clear: both;
+  padding-top: 18px;
+  border-top: dotted 2px #c7c7c7;
+}
+
+.review {
+  font-size: 14px;
+  padding-bottom: 38px;
+}
+.review__title {
+  font-weight: bold;
+  color: #3f424b;
+}
+.review__author {
+  color: #333;
+  margin-top: 2px;
+  font-size: 13px;
+}
+.review__author:after {
+  content: "|";
+  position: relative;
+  left: 4px;
+}
+.review__date {
+  color: #333;
+  font-size: 12px;
+  padding-left: 2px;
+}
+.review__rating {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -64px -32px no-repeat;
+  width: 74px;
+  height: 13px;
+  margin-top: 3px;
+}
+.review__excerpt {
+  max-width: 350px;
+  padding: 7px 0;
+  color: #2c2c2c;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.review__readmore {
+  color: #4e6e85;
+  font-weight: bold;
+  font-size: 13px;
+}
+.review__readmore:hover {
+  color: #324655;
+}
+.review__readmore:after {
+  content: "\25BA";
+  position: absolute;
+  padding-left: 1px;
+  color: #383840;
+  font-size: 9px;
+  line-height: 2;
+}
+
+.search {
+  position: relative;
+}
+.search__input {
+  width: 150px;
+  margin: 8px 0;
+  padding: 4px 6px;
+  border: 1px solid #d3d4d5;
+  color: #3a3a3a;
+  border-radius: 4px;
+  box-shadow: inset 0 0 3px #ddd;
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 12px;
+}
+.search__input:focus {
+  outline: none;
+  box-shadow: 0 0 3px #c4c4c4;
+}
+.search__submit {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -152px -32px no-repeat;
+  width: 17px;
+  height: 16px;
+  position: absolute;
+  left: 126px;
+  top: 12px;
+  border: none;
+  cursor: pointer;
+}
+.search__submit:focus {
+  outline: none;
+}
+
+.size__title {
+  margin-bottom: 7px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #202c3a;
+  text-transform: uppercase;
+}
+.size__items {
+  max-width: 90px;
+  display: inline-block;
+}
+.size__item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background: #d8dede;
+  color: #2b3034;
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.size__item:hover {
+  outline: solid 1px #72a527;
+}
+.size__item--disabled {
+  background: #eff0f2;
+  color: #bdbec0;
+  cursor: default;
+}
+.size__item--disabled:hover {
+  outline: none;
+}
+.size__item--selected {
+  border: solid 1px #000;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.size__help {
+  display: inline-block;
+  font-size: 11px;
+  vertical-align: bottom;
+  color: #4e6e85;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-weight: bold;
+}
+.size__help:hover {
+  color: #324655;
+}
+
+.social__title {
+  display: inline-block;
+  vertical-align: middle;
+  color: #40444f;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.social__icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  text-decoration: none;
+  margin: 0 1px;
+}
+.social__icon--facebook {
+  background: url('../images/generated/icons-s89c0dd26d4.png') 0 0 no-repeat;
+}
+.social__icon--twitter {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -227px -32px no-repeat;
+}
+
+.stores__item {
+  display: inline-block;
+  width: 104px;
+  height: 32px;
+}
+.stores__item--first {
+  background: url('../images/generated/icons-s89c0dd26d4.png') -64px 0 no-repeat;
+  width: 104px;
+  height: 32px;
+}
+.stores__item--last {
+  background: url('../images/generated/icons-s89c0dd26d4.png') 0 -54px no-repeat;
+  width: 104px;
+  height: 32px;
+}
+.stores__link {
+  display: block;
+  height: 100%;
+  text-indent: -9999px;
+}
+
+.suggestion {
+  position: relative;
+  display: block;
+}
+.suggestion__text {
+  position: absolute;
+  right: 89px;
+  bottom: 22px;
+}
+.suggestion__title {
+  font-family: "Myriad Pro Light", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #5c5c5c;
+}
+.suggestion__descr {
+  max-width: 150px;
+  margin-top: 3px;
+  color: #222;
+  text-transform: uppercase;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.suggestion__descr:after {
+  content: ">";
+  position: relative;
+  top: -1px;
+  left: 5px;
+}
+
+.tabs__toggle {
+  width: 32.5%;
+  float: left;
+  margin-right: 1.2%;
+  padding-left: 8px;
+}
+.tabs__toggle--last {
+  float: right;
+  margin-right: 0;
+}
+.tabs__toggle--active {
+  position: relative;
+  top: 1px;
+  border: solid 1px #d7d8dc;
+  border-bottom: 0;
+  background: #fff;
+}
+.tabs__toggle--inactive {
+  background: #e7e8ec;
+  border: solid 1px #e7e8ec;
+  border-bottom: 0;
+}
+.tabs__link {
+  display: block;
+  padding: 5px 10px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a2948;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.tabs__content {
+  padding: 10px 10px 5px 15px;
+  overflow: hidden;
+  clear: both;
+  text-overflow: ellipsis;
+  border: solid 1px #d7d8dc;
+}
+.tabs__item--visible {
+  display: block;
+}
+.tabs__item--hidden {
+  display: none;
+}
+.tabs__square {
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #999;
+}
+.tabs__name {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  color: #6d6d6d;
+}
+.tabs__text {
+  margin: 10px 0;
+  font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+.thumbs {
+  padding-top: 5px;
+}
+.thumbs__item--last {
+  margin-left: 85px;
+}
+
+.topline {
+  background: #102b5a;
+  height: 28px;
+}
+.topline__container {
+  position: relative;
+}
+.topline__stores {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.topline__usermenu {
+  float: right;
+  margin-right: 285px;
+}
+.topline__bag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 266px;
+  height: 42px;
+}
+
+.usermenu {
+  padding: 5px 0;
+}
+.usermenu__item {
+  display: inline;
+  padding: 0 12px;
+  border-right: solid 1px #fff;
+  font-size: 12px;
+  line-height: 1;
+}
+.usermenu__item--last {
+  border-right: 0;
+  padding-right: 0;
+}
+.usermenu__link {
+  font-family: "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  color: #fff;
+}
+.usermenu__link:hover {
+  color: #d9d9d9;
+}

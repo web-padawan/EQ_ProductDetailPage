@@ -1,0 +1,80 @@
+.reviews {
+  margin-top: 16px;
+  padding: 5px;
+  font-family: $gravur;
+
+  &__title {
+    float: left;
+    margin-bottom: 8px;
+    color: $reviews-title;
+    font-weight: bold;
+  }
+  &__write {
+    float: right;
+    color: $link-default;
+    font-weight: bold;
+    font-size: 12px;
+    &:hover {
+      color: darken($link-default, 15%);
+    }
+  }
+  &__content {
+    clear: both;
+    padding-top: 18px;
+    border-top: dotted 2px $reviews-border;
+  }
+}
+
+.review {
+  font-size: 14px;
+  padding-bottom: 38px;
+
+  &__title {
+    font-weight: bold;
+    color: $review-title;
+  }
+  &__author {
+    color: $review-author;
+    margin-top: 2px;
+    font-size: 13px;
+    &:after {
+      content: "|";
+      position: relative;
+      left: 4px;
+    }
+  }
+  &__date {
+    color: $review-author;
+    font-size: 12px;
+    padding-left: 2px;
+  }
+  &__rating {
+    @include s(rating);
+    margin-top: 3px;
+  }
+  &__excerpt {
+    max-width: 350px;
+    padding: 7px 0;
+    color: $review-excerpt;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__readmore {
+    color: $link-default;
+    font-weight: bold;
+    font-size: 13px;
+    &:hover {
+      color: darken($link-default, 15%);
+    }
+    &:after {
+      content: "\25BA";
+      position: absolute;
+      padding-left: 1px;
+      color: #383840;
+      font-size: 9px;
+      line-height: 2;
+    }
+  }
+}

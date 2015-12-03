@@ -1,0 +1,50 @@
+.bag {
+  @include s(bag);
+  padding-left: 54px;
+
+  &__info {
+    display: inline-block;
+    margin-top: 6px;
+    font-family: $myriad-pro;
+    font-size: 12px;
+    font-weight: bold;
+    color: $bag-info;
+  }
+  &__title {
+    margin-top: 4px;
+    color: $bag-title;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  &__count {
+    padding-right: 5px;
+  }
+  &__price {
+    padding-left: 3px;
+  }
+  &__btn {
+    float: right;
+    margin: 8px 8px 0 0;
+    padding: 7px 9px 6px 9px;
+    font-family: $gravur;
+    font-size: 10px;
+    color: white;
+    letter-spacing: .08em;
+    background: $bag-button;
+    box-shadow: 0px 0px 4px #999;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+      background: darken($bag-button, 10%);
+    }
+  }
+  &__arrow {
+    @include s(arrow_down);
+    display: inline-block;
+    margin-left: 9px;
+    width: 10px;
+    height: 8px;
+    vertical-align: top;
+  }
+}

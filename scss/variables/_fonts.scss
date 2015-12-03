@@ -1,0 +1,7 @@
+@include font-face('Myriad Pro', font-files('myriadpro.woff', woff, 'myriadpro.ttf', ttf), 'myriadpro.eot');
+@include font-face('Myriad Pro Light', font-files('myriadpro-light.woff', woff, 'myriadpro-light.ttf', ttf), 'myriadpro-light.eot');
+@include font-face('Gravur', font-files('gravur.woff', woff, 'gravur.ttf', ttf), 'gravur.eot');
+
+$myriad-pro         : 'Myriad Pro', 'Arial', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+$myriad-pro-light   : 'Myriad Pro Light', 'Arial', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+$gravur             : 'Gravur', 'Myriad Pro', 'Arial', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;

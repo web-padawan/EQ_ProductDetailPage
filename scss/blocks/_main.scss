@@ -1,0 +1,19 @@
+.main {
+  padding-bottom: 15px;
+
+  &__container {
+    @extend %container;
+  }
+  &__content {
+    @include breakpoint(950px) {
+      @include span(14 of 16);
+    }
+  }
+  &__sidebar {
+    clear: both;
+    @include breakpoint(950px) {
+      @include span(last 2 of 16);
+      clear: right;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.stores {
+
+  &__item {
+    display: inline-block;
+    width: 104px;
+    height: 32px;
+    &--first {
+      @include s(thelimited);
+    }
+    &--last {
+      @include s(eloquii);
+    }
+  }
+  &__link {
+    display: block;
+    height: 100%;
+    text-indent: -9999px;
+  }
+}

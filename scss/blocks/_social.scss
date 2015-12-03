@@ -1,0 +1,24 @@
+.social {
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    color: $social-title;
+    font-family: $gravur;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    text-decoration: none;
+    margin: 0 1px;
+    &--facebook {
+      @include si(facebook);
+    }
+    &--twitter {
+      @include si(twitter);
+    }
+  }
+}

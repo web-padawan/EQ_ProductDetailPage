@@ -1,0 +1,12 @@
+$susy: (
+  columns: 12,
+  container: 950px,
+  debug: (
+    // image: show,
+  )
+);
+
+%container {
+  @include container;
+  min-width: 800px;
+}

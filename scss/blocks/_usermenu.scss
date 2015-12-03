@@ -1,0 +1,22 @@
+.usermenu {
+  padding: 5px 0;
+
+  &__item {
+    display: inline;
+    padding: 0 12px;
+    border-right: solid 1px #fff;
+    font-size: 12px;
+    line-height: 1;
+    &--last {
+      border-right: 0;
+      padding-right: 0;
+    }
+  }
+  &__link {
+    font-family: $myriad-pro;
+    color: #fff;
+    &:hover {
+      color: darken(#fff, 15%);
+    }
+  }
+}

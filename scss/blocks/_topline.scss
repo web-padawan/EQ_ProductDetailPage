@@ -1,0 +1,25 @@
+.topline {
+  background: $header-bg;
+  height: 28px;
+
+  &__container {
+    @extend %container;
+    position: relative;
+  }
+  &__stores {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__usermenu {
+    float: right;
+    margin-right: 285px;
+  }
+  &__bag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 266px;
+    height: 42px;
+  }
+}

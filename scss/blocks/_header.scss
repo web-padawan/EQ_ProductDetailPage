@@ -1,0 +1,30 @@
+.header {
+  background: image-url('header.jpg') no-repeat center top;
+  height: 110px;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__logo {
+    @include replace-text('logo.png');
+    width: 183px;
+    height: 38px;
+    position: relative;
+    top: 20px;
+    background-size: cover;
+  }
+  &__home {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+  }
+  &__nav {
+    float: left;
+  }
+  &__search {
+    float: right;
+    margin-top: 35px;
+    margin-right: 2px;
+  }
+}

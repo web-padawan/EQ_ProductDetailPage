@@ -1,0 +1,14 @@
+.bottom {
+  &__suggestion {
+    margin-top: 20px;
+  }
+
+  &__left {
+    @include span(4 of 8);
+    padding-top: 4px;
+  }
+  &__right {
+    @include span(last 4 of 8);
+    padding: 0 40px 0 2px;
+  }
+}

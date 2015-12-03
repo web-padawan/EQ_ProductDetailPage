@@ -1,0 +1,37 @@
+.actions {
+  padding: 0 5px 16px 0;
+  background: image-url('line.jpg') no-repeat center bottom;
+  &__item {
+    width: 36%;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    &--print {
+      width: 15%;
+      margin-right: 0;
+      margin-left: 18px;
+    }
+  }
+  &__link {
+    font-family: $gravur;
+    color: $link-default;
+    font-size: 12px;
+    font-weight: bold;
+    &:hover {
+      color: darken($link-default, 15%);
+    }
+  }
+  &__icon {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
+$actions: wishlist, send, print, like, share;
+
+@each $a in $actions {
+  .actions__icon--#{$a} {
+    @include s(#{$a});
+  }
+}

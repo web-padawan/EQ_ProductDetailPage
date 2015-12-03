@@ -1,0 +1,52 @@
+.footer {
+  overflow: hidden;
+  height: 85px;
+  background: $footer-bg-dark;
+  background: linear-gradient($footer-bg-light 0%, $footer-bg-dark 100%);
+  padding: 10px 20px;
+
+  &__container {
+    @extend %container;
+  }
+  &__items {
+    max-width: 640px;
+    float: left;
+  }
+  &__item {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 16px;
+    font-family: $gravur;
+    font-weight: bold;
+    font-size: 12px;
+    &--code {
+      margin-left: -10px;
+      font-family: $myriad-pro;
+      font-weight: normal;
+    }
+  }
+  &__link {
+    color: $footer-link;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__social {
+    float: right;
+  }
+  &__copyright {
+    padding-top: 18px;
+    clear: both;
+    color: $footer-copyright ;
+    font-family: $myriad-pro;
+    font-size: 10px;
+  }
+  &__company {
+    padding-right: 10px;
+    border-right: solid 1px $footer-copyright;
+  }
+  &__design {
+    padding-left: 10px;
+  }
+}

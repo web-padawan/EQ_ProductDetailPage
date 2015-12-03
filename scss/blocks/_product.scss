@@ -1,0 +1,90 @@
+.product {
+  width: 100%;
+  overflow: hidden;
+
+  &__left {
+    @include span(4 of 8);
+    padding-top: 4px;
+  }
+  &__right {
+    @include span(last 4 of 8);
+    padding: 0 40px 0 2px;
+  }
+  &__title {
+    float: left;
+    color: $product-title;
+    font-family: $gravur;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+  }
+  &__rating {
+    @include s(rating);
+    float: right;
+    margin-top: 3px;
+  }
+  &__reviews {
+    float: right;
+    margin-top: 3px;
+    margin-left: 4px;
+    color: $link-default;
+    font-family: $gravur;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: underline;
+    &:hover {
+      color: darken($link-default, 15%);
+    }
+  }
+  &__details {
+    padding-bottom: 28px;
+    clear: both;
+    background: image-url('line.jpg') no-repeat center bottom;
+    font-family: $myriad-pro;
+    line-height: 1.2;
+  }
+  &__price {
+    margin-right: 6px;
+    color: $product-price;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+  }
+  &__oldprice {
+    color: $product-oldprice;
+    font-size: 13px;
+    text-decoration: line-through;
+  }
+  &__sku {
+    float: right;
+    display: inline-block;
+    padding-top: 7px;
+    color: #a1a1a1;
+    font-size: 11px;
+  }
+  &__color {
+    float: left;
+    width: 47.5%;
+  }
+  &__size {
+    float: left;
+    width: 52%;
+  }
+  &__addtobag {
+    padding-top: 20px;
+  }
+  &__promo {
+    margin-top: 24px;
+    padding: 12px 15px;
+    border: 2px dotted $promo-border;
+    font-family: $gravur;
+    font-size: 14px;
+    font-weight: bold;
+    color: $promo-text;
+    text-transform: uppercase;
+  }
+  &__tabs {
+    margin-top: 20px;
+  }
+}
