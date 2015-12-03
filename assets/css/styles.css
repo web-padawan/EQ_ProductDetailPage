@@ -196,7 +196,7 @@ video {
   color: white;
   letter-spacing: .08em;
   background: #a3ca39;
-  box-shadow: 0px 0px 4px #999;
+  box-shadow: 0 0 4px #999;
   border: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -253,7 +253,7 @@ video {
   color: white;
   letter-spacing: .08em;
   background: #a3ca39;
-  box-shadow: 0px 0px 4px #999;
+  box-shadow: 0 0 4px #999;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -267,8 +267,6 @@ video {
   height: 8px;
   display: inline-block;
   margin-left: 9px;
-  width: 10px;
-  height: 8px;
   vertical-align: top;
 }
 
@@ -591,7 +589,7 @@ video {
 }
 .nav__link--active {
   background: #fff;
-  box-shadow: inset 0px 3px 5px #d1d1d1;
+  box-shadow: inset 0 3px 5px #d1d1d1;
   color: #a3ca39;
 }
 
@@ -661,7 +659,6 @@ video {
 }
 .product__sku {
   float: right;
-  display: inline-block;
   padding-top: 7px;
   color: #a1a1a1;
   font-size: 11px;
@@ -849,7 +846,6 @@ video {
 }
 .size__item {
   display: inline-block;
-  vertical-align: top;
   margin: 2px 0;
   width: 24px;
   height: 24px;
