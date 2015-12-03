@@ -25,8 +25,11 @@
       margin-right: 16px;
     }
     &--code {
-      margin-left: -10px;
       font-family: $myriad-pro;
+      font-weight: normal;
+      font-size: 11px;
+    }
+    .ie & {
       font-weight: normal;
     }
   }

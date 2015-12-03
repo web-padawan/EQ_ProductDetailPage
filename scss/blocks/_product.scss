@@ -5,10 +5,16 @@
   &__left {
     @include span(4 of 8);
     padding-top: 4px;
+    min-height: 502px;
   }
   &__right {
     @include span(last 4 of 8);
-    padding: 0 40px 0 2px;
+    @include breakpoint(1024px) {
+      padding-right: 40px;
+    }
+  }
+  &__image {
+    height: 100%;
   }
   &__title {
     float: left;
