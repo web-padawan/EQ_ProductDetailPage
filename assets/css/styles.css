@@ -82,15 +82,18 @@ video {
   src: url('../fonts/gravur.eot?&1448975502#iefix') format('embedded-opentype'), url('../fonts/gravur.woff?1448975486') format('woff'), url('../fonts/gravur.ttf?1448975468') format('truetype');
 }
 .footer__container, .header__container, .main__container, .topline__container {
-  max-width: 950px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 800px;
 }
 .footer__container:after, .header__container:after, .main__container:after, .topline__container:after {
   content: " ";
   display: block;
   clear: both;
+}
+
+body {
+  min-width: 800px;
 }
 
 .actions {
@@ -337,7 +340,7 @@ video {
   text-decoration: none;
   vertical-align: top;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .carousel__prev {
     display: block;
     margin: 2px auto;
@@ -358,7 +361,7 @@ video {
   text-decoration: none;
   vertical-align: top;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .carousel__next {
     display: block;
     margin: 2px auto;
@@ -375,7 +378,7 @@ video {
   overflow: hidden;
   padding: 0 10px;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .carousel__items {
     float: none;
     padding: 10px 0 0 0;
@@ -386,7 +389,7 @@ video {
   text-decoration: none;
   margin: 0 10px;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .carousel__item {
     display: block;
     margin: 8px 0 16px 0;
@@ -503,7 +506,6 @@ video {
 
 .header {
   background: url('../images/header.jpg?1449055224') no-repeat center top;
-  height: 110px;
 }
 .header__logo {
   text-indent: -119988px;
@@ -534,13 +536,13 @@ video {
 .header__search {
   float: right;
   margin-top: 35px;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 
 .main {
   padding-bottom: 15px;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .main__content {
     width: 87.34177%;
     float: left;
@@ -550,7 +552,7 @@ video {
 .main__sidebar {
   clear: both;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .main__sidebar {
     width: 11.39241%;
     float: right;
@@ -565,7 +567,7 @@ video {
 .nav__item {
   float: left;
 }
-@media (min-width: 961px) {
+@media (min-width: 1300px) {
   .nav__item:first-child .nav__link {
     padding-left: 0;
   }
@@ -576,7 +578,7 @@ video {
   font-size: 13px;
   line-height: 20px;
   font-weight: bold;
-  padding: 10px 8px;
+  padding: 10px 6px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -584,7 +586,7 @@ video {
 .nav__link:hover {
   color: #72a527;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .nav__link {
     padding: 10px 17px;
     font-size: 14px;
@@ -594,7 +596,7 @@ video {
   padding: 10px 6px;
   font-size: 12px;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .ie .nav__link {
     padding: 10px 8px;
     font-size: 14px;
@@ -702,9 +704,13 @@ video {
 }
 
 .recommend {
-  padding: 0 10px;
   clear: both;
   overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .recommend {
+    padding: 0 10px;
+  }
 }
 .recommend__title {
   margin-bottom: 20px;
@@ -714,7 +720,7 @@ video {
   text-align: center;
   text-transform: uppercase;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .recommend__title {
     margin-bottom: 10px;
     max-width: 80px;
@@ -726,7 +732,7 @@ video {
   max-width: 85%;
   overflow: hidden;
 }
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
   .recommend__content {
     max-width: 100%;
   }

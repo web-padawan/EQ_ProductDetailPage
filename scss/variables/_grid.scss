@@ -1,6 +1,6 @@
 $susy: (
   columns: 12,
-  container: 950px,
+  container: 1280px,
   debug: (
     // image: show,
   )
@@ -8,5 +8,8 @@ $susy: (
 
 %container {
   @include container;
+}
+
+body {
   min-width: 800px;
 }
