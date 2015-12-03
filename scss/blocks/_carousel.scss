@@ -3,7 +3,7 @@
 
   &__prev {
     @include s(carousel_left);
-    @include breakpoint(950px) {
+    @include breakpoint(1024px) {
       display: block;
       margin: 2px auto;
       @include s(carousel_up);
@@ -18,7 +18,7 @@
   }
   &__next {
     @include s(carousel_right);
-    @include breakpoint(950px) {
+    @include breakpoint(1024px) {
       display: block;
       margin: 2px auto;
       @include s(carousel_down);
@@ -35,7 +35,7 @@
     display: inline-block;
     overflow: hidden;
     padding: 0 10px;
-    @include breakpoint(950px) {
+    @include breakpoint(1024px) {
       float: none;
       padding: 10px 0 0 0;
     }
@@ -44,7 +44,7 @@
     display: inline-block;
     text-decoration: none;
     margin: 0 10px;
-    @include breakpoint(950px) {
+    @include breakpoint(1024px) {
       display: block;
       margin: 8px 0 16px 0;
     }

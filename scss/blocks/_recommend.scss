@@ -1,7 +1,7 @@
 .recommend {
   clear: both;
   overflow: hidden;
-  @include breakpoint(950px) {
+  @include breakpoint(1024px) {
     padding: 0 10px;
   }
 
@@ -12,7 +12,7 @@
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    @include breakpoint(950px) {
+    @include breakpoint(1024px) {
       margin-bottom: 10px;
       max-width: 80px;
       margin: 0 auto;
@@ -22,7 +22,7 @@
     margin: 0 auto;
     max-width: 90%;
     overflow: hidden;
-    @include breakpoint(950px) {
+    @include breakpoint(1024px) {
       max-width: 100%;
     }
   }
