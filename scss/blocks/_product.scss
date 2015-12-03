@@ -5,7 +5,7 @@
   &__left {
     @include span(4 of 8);
     padding-top: 4px;
-    min-height: 502px;
+    min-height: 500px;
   }
   &__right {
     @include span(last 4 of 8);
