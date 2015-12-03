@@ -17,12 +17,16 @@
     font-size: 13px;
     line-height: 20px;
     font-weight: bold;
-    padding: 10px 6px;
+    padding: 10px 7px;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
     &:hover {
       color: $navlink-hover;
+    }
+    @include breakpoint(950px) {
+      padding: 10px 12px;
+      font-size: 14px;
     }
     @include breakpoint(1024px) {
       padding: 10px 17px;
