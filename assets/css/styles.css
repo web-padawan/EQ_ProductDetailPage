@@ -455,7 +455,6 @@ video {
 
 .footer {
   overflow: hidden;
-  height: 85px;
   background: #cacfd5;
   background: linear-gradient(#dce0e3 0%, #cacfd5 100%);
   padding: 10px 20px;
