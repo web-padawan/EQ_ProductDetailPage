@@ -2,12 +2,12 @@
   padding: 0 5px 16px 0;
   background: image-url('line.jpg') no-repeat center bottom;
   &__item {
-    width: 34%;
+    width: 36%;
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 6px;
     margin-bottom: 6px;
     &--print {
-      width: 18%;
+      width: 16%;
       margin-right: 0;
       margin-left: 10px;
     }
@@ -19,6 +19,9 @@
     font-weight: bold;
     &:hover {
       color: darken($link-default, 15%);
+    }
+    .ie & {
+      font-weight: normal;
     }
   }
   &__icon {

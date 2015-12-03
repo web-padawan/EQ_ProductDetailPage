@@ -102,13 +102,13 @@ body {
   background: url('../images/line.jpg?1449137525') no-repeat center bottom;
 }
 .actions__item {
-  width: 34%;
+  width: 36%;
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 6px;
   margin-bottom: 6px;
 }
 .actions__item--print {
-  width: 18%;
+  width: 16%;
   margin-right: 0;
   margin-left: 10px;
 }
@@ -120,6 +120,9 @@ body {
 }
 .actions__link:hover {
   color: #324655;
+}
+.ie .actions__link {
+  font-weight: normal;
 }
 .actions__icon {
   display: inline-block;
