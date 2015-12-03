@@ -3,21 +3,14 @@
 
   &__item {
     float: left;
-    &:first-child {
-      .nav__link {
-        @include breakpoint(1300px) {
-          padding-left: 0;
-        }
-      }
-    }
   }
   &__link {
     font-family: $gravur;
     color: $navlink-default;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 20px;
     font-weight: bold;
-    padding: 10px 7px;
+    padding: 10px 4px;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -25,16 +18,14 @@
       color: $navlink-hover;
     }
     @include breakpoint(950px) {
-      padding: 10px 12px;
+      padding: 10px 8px;
       font-size: 14px;
     }
-    @include breakpoint(1024px) {
-      padding: 10px 17px;
+    @include breakpoint(1280px) {
+      padding: 10px 15px;
       font-size: 14px;
     }
     .ie & {
-      padding: 10px 6px;
-      font-size: 12px;
       @include breakpoint(1024px) {
         padding: 10px 8px;
         font-size: 14px;

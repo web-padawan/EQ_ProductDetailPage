@@ -2,14 +2,14 @@
   padding: 0 5px 16px 0;
   background: image-url('line.jpg') no-repeat center bottom;
   &__item {
-    width: 36%;
+    width: 34%;
     display: inline-block;
     margin-right: 8px;
     margin-bottom: 6px;
     &--print {
-      width: 15%;
+      width: 18%;
       margin-right: 0;
-      margin-left: 18px;
+      margin-left: 10px;
     }
   }
   &__link {

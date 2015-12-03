@@ -85,6 +85,7 @@ video {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 40px;
 }
 .footer__container:after, .header__container:after, .main__container:after, .topline__container:after {
   content: " ";
@@ -101,15 +102,15 @@ body {
   background: url('../images/line.jpg?1449137525') no-repeat center bottom;
 }
 .actions__item {
-  width: 36%;
+  width: 34%;
   display: inline-block;
   margin-right: 8px;
   margin-bottom: 6px;
 }
 .actions__item--print {
-  width: 15%;
+  width: 18%;
   margin-right: 0;
-  margin-left: 18px;
+  margin-left: 10px;
 }
 .actions__link {
   font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
@@ -463,16 +464,26 @@ body {
   padding: 10px 20px;
 }
 .footer__items {
-  max-width: 640px;
+  max-width: 560px;
   float: left;
+}
+@media (min-width: 950px) {
+  .footer__items {
+    max-width: 670px;
+  }
 }
 .footer__item {
   display: inline-block;
   margin-top: 5px;
-  margin-right: 16px;
+  margin-right: 6px;
   font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   font-weight: bold;
   font-size: 12px;
+}
+@media (min-width: 950px) {
+  .footer__item {
+    margin-right: 16px;
+  }
 }
 .footer__item--code {
   margin-left: -10px;
@@ -567,18 +578,13 @@ body {
 .nav__item {
   float: left;
 }
-@media (min-width: 1300px) {
-  .nav__item:first-child .nav__link {
-    padding-left: 0;
-  }
-}
 .nav__link {
   font-family: "Gravur", "Myriad Pro", "Arial", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   color: #101e47;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 20px;
   font-weight: bold;
-  padding: 10px 7px;
+  padding: 10px 4px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -588,19 +594,15 @@ body {
 }
 @media (min-width: 950px) {
   .nav__link {
-    padding: 10px 12px;
+    padding: 10px 8px;
     font-size: 14px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .nav__link {
-    padding: 10px 17px;
+    padding: 10px 15px;
     font-size: 14px;
   }
-}
-.ie .nav__link {
-  padding: 10px 6px;
-  font-size: 12px;
 }
 @media (min-width: 1024px) {
   .ie .nav__link {
@@ -735,7 +737,7 @@ body {
 }
 .recommend__content {
   margin: 0 auto;
-  max-width: 85%;
+  max-width: 90%;
   overflow: hidden;
 }
 @media (min-width: 950px) {
@@ -1069,7 +1071,7 @@ body {
 .topline__stores {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 40px;
 }
 .topline__usermenu {
   float: right;
@@ -1078,7 +1080,7 @@ body {
 .topline__bag {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 40px;
   width: 266px;
   height: 42px;
 }

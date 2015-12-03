@@ -8,16 +8,22 @@
     @extend %container;
   }
   &__items {
-    max-width: 640px;
+    max-width: 560px;
     float: left;
+    @include breakpoint(950px) {
+      max-width: 670px;
+    }
   }
   &__item {
     display: inline-block;
     margin-top: 5px;
-    margin-right: 16px;
+    margin-right: 6px;
     font-family: $gravur;
     font-weight: bold;
     font-size: 12px;
+    @include breakpoint(950px) {
+      margin-right: 16px;
+    }
     &--code {
       margin-left: -10px;
       font-family: $myriad-pro;
