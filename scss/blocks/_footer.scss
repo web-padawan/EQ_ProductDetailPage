@@ -8,7 +8,7 @@
     @extend %container;
   }
   &__items {
-    max-width: 560px;
+    max-width: 550px;
     float: left;
     @include breakpoint(950px) {
       max-width: 670px;

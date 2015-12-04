@@ -473,7 +473,7 @@ body {
   padding: 10px 20px;
 }
 .footer__items {
-  max-width: 560px;
+  max-width: 550px;
   float: left;
 }
 @media (min-width: 950px) {
